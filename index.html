@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AL Store Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader" class="loader">
+  <div class="loader-grid"></div>
+  <div class="loader-content">
+    <div class="loader-mark">AL</div>
+    <div class="loader-title">AL STORE <span>GAMES</span></div>
+    <div class="loader-line"><i></i></div>
+    <div class="loader-status">INITIALIZING STORE <b id="loadPercent">0%</b></div>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="brand"><span>AL</span><div><strong>AL STORE</strong><small>GAMES</small></div></div>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="slides" id="slides"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">NEXT LEVEL GAMING STORE</p>
+    <h1>كل ألعابك<br><span>في مكان واحد</span></h1>
+    <p>ألعاب • شحن • بطاقات • خدمات Gaming</p>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<nav class="tabs" id="tabs"></nav>
+<section id="sections"></section>
+</main>
+
+<div class="modal" id="productModal">
+  <div class="modal-card">
+    <button class="close" data-close>×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="modal" id="payModal">
+  <div class="modal-card payment">
+    <button class="close" data-close>×</button>
+    <div class="step">02 / PAYMENT</div>
+    <h2>إتمام التحويل</h2>
+    <p>حوّل المبلغ التالي ثم اضغط «تم التحويل».</p>
+    <div class="total" id="payTotal"></div>
+    <div class="transfer-box" id="transferInfo"></div>
+    <button class="primary" id="paidBtn">تم التحويل ✓</button>
+  </div>
+</div>
+
+<footer>© 2026 AL Store Games — Built for gamers.</footer>
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
